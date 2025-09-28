@@ -18,4 +18,10 @@ fn main() {
     println!("I plan on buying {buy_movie} movies today");
     buy_movie = 7;
     println!("Decided to get {buy_movie} more movies today");
+
+    // variable shadowing
+
+    let grams_of_protein = "100.345";
+    let grams_of_protein = 100.345;
+    let grams_of_proten = 100;
 }
