@@ -1,3 +1,6 @@
+// Constant
+const TAX_RATE: f64 = 7.25;
+
 fn main() {
     //  Variables
 
@@ -38,4 +41,9 @@ fn main() {
         let coffee_price = 3.99;
         println!("The price is {coffee_price}");
     }
+
+    // Constant
+    let income = 10000;
+    println!("The tax rate is {TAX_RATE}");
+    println!("My income in {income} and my tax rate is {TAX_RATE}")
 }
