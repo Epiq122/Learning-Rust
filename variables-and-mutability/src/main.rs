@@ -21,7 +21,21 @@ fn main() {
 
     // variable shadowing
 
-    let grams_of_protein = "100.345";
-    let grams_of_protein = 100.345;
-    let grams_of_proten = 100;
+    let _grams_of_protein = "100.345";
+    let _grams_of_protein = 100.345;
+    let _grams_of_proten = 100;
+
+    // Scope
+
+    //  outer
+    let coffee_price = 5.99;
+
+    {
+        // inner
+        println!("The price is {coffee_price}");
+        let cookie_price = 1.99;
+        println!("The cookie price is {cookie_price}");
+        let coffee_price = 3.99;
+        println!("The price is {coffee_price}");
+    }
 }
