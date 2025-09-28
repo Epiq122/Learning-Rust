@@ -1,3 +1,6 @@
+//compiler directives
+#![allow(unused_variables)]
+
 // Constant
 const TAX_RATE: f64 = 7.25;
 
@@ -57,4 +60,8 @@ fn main() {
     println!(
         "a mile long race is {mile_race_length} meters long and a two mile race is {two_mile_race_length}"
     );
+
+    // Compiler directives
+    #[allow(unused_variables)]
+    let mighty_ducks_win = 66;
 }
