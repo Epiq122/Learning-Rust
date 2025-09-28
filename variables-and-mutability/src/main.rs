@@ -1,6 +1,9 @@
 // Constant
 const TAX_RATE: f64 = 7.25;
 
+// Type alias
+type Meters = i32;
+
 fn main() {
     //  Variables
 
@@ -45,5 +48,13 @@ fn main() {
     // Constant
     let income = 10000;
     println!("The tax rate is {TAX_RATE}");
-    println!("My income in {income} and my tax rate is {TAX_RATE}")
+    println!("My income in {income} and my tax rate is {TAX_RATE}");
+
+    // Type alias
+
+    let mile_race_length: Meters = 1600;
+    let two_mile_race_length: Meters = 3200;
+    println!(
+        "a mile long race is {mile_race_length} meters long and a two mile race is {two_mile_race_length}"
+    );
 }
